@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#tela-principal{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 48, 48); 
+}
+.boxDados{
+width: 550px;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 3px solid white;
+border-radius: 15px;
+}
+.quizBox{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+color: white;
+flex-direction: column;
+padding: 10px;
+}
+.infos{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 10px;
+}
+.anunciado{
+    font-size: 18px;
+    font-weight: bold;
+}
+#points{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+#tentativas{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    width: 400px;
+}
+.pergunta button{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+.pergunta button:hover{
+    background-color: blueviolet;
+}
+.alert{
+    position: absolute;
+    width: 350px;
+    height: 55px;
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+    transition: all 0.5s;
+}
+.alert p{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.pontuacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+@keyframes moverAlert {
+
+50%{
+    transform: translateY(110px);
+}
+100%{
+    transform: translateY(-140px);
+}  
+}
+@keyframes correto{
+50%{
+    background-color: green;
+}
+100%{
+    background-color: transparent;
+}   
+}
+@keyframes incorreto{
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+.boxQuizclass{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 350px;
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+.boxQuizclassRed{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 350px;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+

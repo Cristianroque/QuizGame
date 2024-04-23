@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Online</title>
+    <link rel="stylesheet" href="./assets/css/style.css" >
+</head>
+<body>
+   
+<main id='tela-principal'>
+    <div class="alert">
+        <p>Resposta incorreta!</p>
+    </div>
+
+    <div class="boxDados">
+
+        <div class="quizBox">
+
+            <div class="infos">
+
+            <h3>Quiz</h3>
+
+            </div>
+
+            <div class="pontuacao">
+
+            <p>Points</p>
+            <p id="points">0</p> 
+            
+            <p>Tentativas: </p>
+            <p id="tentativas">3</p>
+
+            </div>
+
+            <div class="pergunta">
+                <p id="pergunta" class="anunciado">Pergunta 1: Qual é o maior planeta do sistema solar?</p>
+                <button class="Alternativa" onclick="VerificarRespostaCerta('A')" id="A">a) Terra</button>
+                <button class="Alternativa" onclick="VerificarRespostaCerta('B')" id="B">b) Júpiter</button>
+                <button class="Alternativa" onclick="VerificarRespostaCerta('C')" id="C">c) Vênus</button>
+                <button class="Alternativa" onclick="VerificarRespostaCerta('D')" id="D">d) Marte</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</main>
+<script src='./assets/javascript/script.js'></script>
+</body>
+</html>
